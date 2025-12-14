@@ -1,0 +1,142 @@
+.Hero {
+  background-color: var(--slight-white);
+  position: relative;
+  min-height: 70vh;
+  margin-block: clamp(3rem, 8vh, 6rem);
+  width: 100%;
+  overflow: hidden;
+}
+
+.bg-image {
+  position: absolute;
+  z-index: 0;
+}
+
+.bg-image1 {
+  bottom: 0;
+  left: 5%;
+}
+
+.bg-image2 {
+  bottom: 15%;
+  right: 19%;
+}
+
+.Hero__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding-inline: clamp(1rem, 5vw, 2rem);
+  gap: clamp(2rem, 5vw, 4rem);
+}
+
+.Hero__text {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: clamp(0rem, 7vw, 9%);
+  line-height: 1.2;
+}
+
+.hero__greeting,
+.hero__paragraph {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.hero__greeting {
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.hero__heading {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  margin: 0.2em 0;
+  font-family: "Epilogue", sans-serif;
+}
+
+.hero__paragraph {
+  line-height: 1.6;
+  margin-bottom: 1.5em;
+  color: var(--text-color);
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.button-container {
+  display: flex;
+  gap: 1em;
+}
+
+.hero__image {
+  max-width: 100%;
+  height: auto;
+}
+
+.overhead__image,
+.overhead__info {
+  position: absolute;
+  z-index: 3;
+}
+
+.overhead__image {
+  bottom: 8%;
+  left: 35%;
+  transform: translateX(-50%);
+  width: 40%;
+}
+
+.overhead__info {
+  bottom: 10%;
+  left: 55%;
+  transform: translateX(-50%);
+  width: 50%;
+}
+
+@media (max-width: 1500px) {
+  .Hero__text {
+    padding-left: clamp(0rem, 5vw, 0%);
+  }
+
+  .overhead__image {
+    bottom: 12%;
+    left: 35%;
+    width: 30%;
+  }
+
+  .overhead__info {
+    bottom: 5%;
+    left: 50%;
+    width: 25%;
+  }
+
+  .hero__image {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .Hero__container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Hero__text {
+    padding-left: 0;
+    align-items: center;
+  }
+
+  .hero__image {
+    max-width: 80%;
+  }
+
+  .bg-image,
+  .overhead__image,
+  .overhead__info {
+    display: none;
+  }
+}

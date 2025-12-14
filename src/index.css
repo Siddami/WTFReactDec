@@ -1,6 +1,7 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css);
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
+
 :root{
     --primary-color: #704FE6;
     --secondary-color: #FFD25D;
@@ -9,6 +10,7 @@
     --blue-color: #17254E;
     --accent-blue: #1F3061;
     --text-color: #0E2A46;
+    --slight-white: #fbf9ff;
 }
 
 body {
