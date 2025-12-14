@@ -16,13 +16,13 @@ const InfoHeader = () => {
             <span>
               <Phone />
             </span>
-            <span>(00) 875 784 5682</span>
+            <a href="tel:+008757845682">(00) 875 784 5682</a>
           </p>
           <p>
             <span>
               <Envelope />
             </span>
-            <span>pacargoinfo@gmail.com</span>
+            <a href="mailto:pacargoinfo@gmail.com">pacargoinfo@gmail.com</a>
           </p>
           <p>
             <span>
@@ -32,16 +32,16 @@ const InfoHeader = () => {
           </p>
         </div>
         <div className="social-info">
-          <a href="https://wwww.facebook.com">
+          <a href="https://wwww.facebook.com" aria-label="Facebook">
             <Facebook />
           </a>
-          <a href="https://wwww.instagram.com">
+          <a href="https://wwww.instagram.com" aria-label="Instagram">
             <Insta />
           </a>
-          <a href="https://www.linkedin.com">
+          <a href="https://www.linkedin.com" aria-label="Linkedin">
             <Linkedin />
           </a>
-          <a href="https://www.youtube.com">
+          <a href="https://www.youtube.com" aria-label="Youtube">
             <Youtube />
           </a>
         </div>

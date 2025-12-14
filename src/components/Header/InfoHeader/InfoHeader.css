@@ -1,70 +1,80 @@
-.InfoHeader{
-    background-color: var(--blue-color);
-    color: white;
-    font-size: 1.5rem;
+.InfoHeader {
+  background-color: var(--blue-color);
+  color: white;
+  font-size: clamp(0.875rem, 1.5vw, 1.5rem);
 }
 
-.info-container{
-    max-width: 1440px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+.info-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-inline: clamp(1rem, 4vw, 2rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
 }
 
 .info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.875em;
+  display: flex;
+  align-items: center;
+  gap: 0.875em;
+  flex-wrap: wrap;
 }
 
-.info p{
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
+.info p {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  position: relative;
 }
 
-.info p::after{
-    content: '|';
-    margin-left: 0.875em;
+.info p::after {
+  content: "|";
+  margin-left: 0.875em;
+  color: white;
+  opacity: 0.2;
+}
+
+.info p:last-child::after {
+  content: "";
+  margin: 0;
+}
+
+.info a {
+  text-decoration: none;
     color: white;
-    opacity: 0.2;
 }
 
-.info p:last-child::after{
-    content: '';
-    margin: 0;
+.social-info {
+  background-color: var(--secondary-color);
+  display: flex;
+  gap: 0.75em;
+  padding: 0 2em;
 }
 
-.social-info{
-    background-color: var(--secondary-color);
-    display: flex;
+.social-info a {
+  color: white;
+}
+
+@media (max-width: 860px) {
+  .info-container {
+    flex-direction: column;
     gap: 0.75em;
-    padding: 0 2em;
-}
+    text-align: center;
+  }
 
-.social-info a{
-    color: white;
-}
+  .info {
+    flex-direction: column;
+    align-items: center;
+  }
 
-@media (max-width: 860px){
-    .InfoHeader{
-        font-size: 1rem;
-        flex-direction: column;
-        padding: 0.5em 0;
-        gap: 0.5em;
-    }
-
-    .info{
-        flex-direction: column;
-        gap: 0.5em;
-    }
-
-    span{
-        display: block;
-    }
-
-    .social-info{
-        justify-content: center;
-    }
+  .social-info {
+    justify-content: center;
+    padding: 0.5em 1em;
+  }
+  .info p:not(:last-child)::after {
+    content: "|";
+    margin-left: 0.875em;
+    opacity: 0.2;
+  }
 }
