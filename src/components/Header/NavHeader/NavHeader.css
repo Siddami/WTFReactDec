@@ -1,5 +1,6 @@
 .NavHeader {
     background-color: #fff;
+    position: relative;
 }
 
 .NavHeader__inner {
@@ -11,11 +12,24 @@
     margin: 0 auto;
 }
 
+.nav-content {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
     gap: 1.5rem;
     font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-links li {
@@ -35,4 +49,33 @@
 .logo {
     height: 3.2em;
     width: auto;
+}
+
+@media (max-width: 900px) {
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .nav-content {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        flex-direction: column;
+        padding: 2em;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        display: none;
+        z-index: 50;
+    }
+
+    .nav-content.open {
+        display: flex;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
 }

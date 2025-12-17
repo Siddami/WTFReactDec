@@ -2,7 +2,7 @@
   background-color: var(--slight-white);
   position: relative;
   min-height: 70vh;
-  margin-block: clamp(3rem, 8vh, 6rem);
+  margin-top: clamp(3rem, 8vh, 6rem);
   width: 100%;
   overflow: hidden;
 }
