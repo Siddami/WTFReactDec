@@ -1,0 +1,58 @@
+{
+    "categories": [
+        {
+            "name": "Business Management",
+            "bg": "blue",
+            "color":  "blue-line",
+            "icon": "/images/business.svg"
+        },
+        {
+            "name": "Arts & Design",
+            "bg": "red",
+            "color": "red-line",
+            "icon": "/images/arts.svg"
+        },
+        {
+            "name": "Personal Development",
+            "bg": "green",
+            "color": "green-line",
+            "icon": "/images/personal.svg"
+        },
+        {
+            "name": "UI/UX Design",
+            "bg": "orange",
+            "color": "orange-line",
+            "icon": "/images/uiux.svg"
+        },
+        {
+            "name": "Graphic  Design",
+            "bg": "purple",
+            "color": "purple-line",
+            "icon": "images/graphics.svg"
+        },
+        {
+            "name": "Digital Marketing",
+            "bg": "teal",
+            "color": "teal-line",
+            "icon": "/images/marketing.svg"
+        },
+        {
+            "name": "Exclusive man",
+            "bg": "dark-purple",
+            "color": "dark-purple-line",
+            "icon": "/images/exclusive.svg"
+        },
+        {
+            "name": "Product Design",
+            "bg": "brown",
+            "color": "brown-line",
+            "icon": "/images/product.svg"
+        },
+        {
+            "name": "Video & Photography",
+            "bg": "light-blue",
+            "color": "light-blue-line",
+            "icon": "/images/video.svg"
+        }
+    ]
+}
