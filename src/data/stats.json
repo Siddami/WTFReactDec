@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "value": "3K+",
+    "label": "Successfully Trained",
+    " icon": "user"
+  },
+  {
+    "id": 2,
+    "value": "15K+",
+    "label": "Classes Completed",
+    "icon": "book"
+  },
+  {
+    "id": 3,
+    "value": "97K+",
+    "label": "Satisfaction Rate",
+    "icon": "smile"
+  },
+  {
+    "id": 4,
+    "value": "102K+",
+    "label": "Students Community",
+    "icon": "users"
+  }
+]

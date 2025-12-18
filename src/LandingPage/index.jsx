@@ -9,6 +9,7 @@ import Why from '../components/Why'
 import Footer from '../components/Footer'
 import Newsletter from '../components/Newletter'
 import PopularPosts from '../components/PopularPosts'
+import StatsBar from '../components/Stats'
 
 const LandingPage = () => {
   return (
@@ -21,6 +22,7 @@ const LandingPage = () => {
         <About />
         <Join />
         <Why />
+        <StatsBar />
         <PopularPosts />
         <Newsletter />
         <Footer />
