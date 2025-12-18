@@ -2,6 +2,7 @@
   background-color: var(--blue-color);
   color: white;
   font-size: clamp(0.875rem, 1.5vw, 1.5rem);
+  width: 100%;
 }
 
 .info-container {
@@ -56,6 +57,16 @@
   color: white;
 }
 
+@media (max-width: 1024px) {
+  .info {
+    row-gap: 0.5em;
+  }
+
+  .info p {
+    flex: 1 1 auto;
+  }
+}
+
 @media (max-width: 860px) {
   .info-container {
     flex-direction: column;
@@ -66,15 +77,23 @@
   .info {
     flex-direction: column;
     align-items: center;
+    gap: 0.5em;
+  }
+
+  .info p::after {
+    content: "";
   }
 
   .social-info {
     justify-content: center;
     padding: 0.5em 1em;
+    background-color: transparent;
   }
+  
   .info p:not(:last-child)::after {
     content: "|";
     margin-left: 0.875em;
+    color: white;
     opacity: 0.2;
   }
 }

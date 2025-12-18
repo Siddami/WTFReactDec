@@ -47,7 +47,7 @@
 }
 
 .logo {
-    height: 3.2em;
+    height: clamp(1em, 5vw, 3em);
     width: auto;
 }
 
