@@ -1,5 +1,5 @@
 import "./Categories.css";
-import data from "../../categories.json";
+import data from "../../data/categories.json";
 
 const Categories = () => {
   return (
