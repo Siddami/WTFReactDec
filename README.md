@@ -1,91 +1,53 @@
-# React Setup For WTF December project
+# Assignment
 
-## Assignment Questions 
-1. What is NPM and Package.json
-2. What is vite
+Read and write a summary of the following;
 
-## Before explaining what NPM is let's understand what packages are 
-Imagine you're building a house. To buid this house, you could actually make every brick and block yourself, craft and design every piece of wood, and forge every nail. But that would take forever! Instead, you go to a hardware store, buy pre-made materials, and assemble them. Packages work exactly the same way in software development. They're pre-written code that provides specific functionality, allowing developers to focus on building their own unique features rather than reinventing tools that are common and can be reused by many.
+1. Intro to React
+2. React Hooks
+3. HTML DOM Document
+4. HTML DOM elements
 
-Basically, a package is a bundled collection of code, resources, and metadata designed to provide specific functionality. Examples of packages includ, tailwind CSS, Express, Jest among others.
+## 1. Intro to React (ReactJS)
 
-## History of NPM, how it came about 
-In the early days of JavaScript and Node.js, developers had a major headache. There was no standardized way to share and manage reusable code. If you wanted to use someone else's code in your project, you'd have to manually download files, track versions, and manage dependencies (other code that your code depends on). It was chaotic and error-prone.
+React is a JavaScript library used for building user interfaces (UI). Think of it like building with **Lego blocks**. Instead of carving a statue from one big rock, you build small pieces (Components) like a hand, a head, or a leg, and snap them together. If you need to change the hand, you just swap that piece without breaking the rest of the statue.
 
-In January 2010, Isaac Z. Schlueter created NPM (originally standing for Node Package Manager) to solve this problem. He was influenced by similar tools in other programming languages like PEAR for PHP and CPAN for Perl. NPM was designed to be a lightweight and community-oriented—a centralized place where developers could publish their code and others could easily install it.
 
-## why Package Managers and what is NPM
+## React Hooks
 
-### Why Package Managers
-A package manager is a tool that makes installing, updating, configuring, and removing packages automated. Without a package manager, managing dependencies would be incredibly frustrating and scattered, this problem is so common it even has a name: "dependency hell."
+- Hooks let you "hook into" React features like state and lifecycle without writing a class.
+- Common Hooks:
+  - `useState` → track and update component state.
+  - `useEffect` → run code when something changes (like componentDidMount, DidUpdate, etc.).
+  - `useRef` → access DOM elements or keep values between renders.
+  - `useContext` → share data across components without props drilling.
+- Hooks must always be called at the top of a component, not inside loops or conditions.
 
-Dependency hell occurs when your project has conflicting package requirements. For example:​
+## ReactJS
 
-Package A requires Version 1.0 of Library X
+- React is a library to build UI with components.
+- Components can be **functional** (modern) or **class-based** (older).
+- JSX is like HTML in JavaScript—React uses it to describe UI.
+- React updates the UI efficiently with a Virtual DOM.
 
-Package B requires Version 2.0 of Library X
+## JavaScript DOM (Document Object Model)
 
-You can only have one version installed
+- DOM is how JavaScript sees and interacts with HTML.
+- The DOM is a tree of nodes: **document → elements → children**.
+- You can read, change, add, or remove elements using JS.
 
-Result: Your project breaks!
+### Key DOM Documents & Elements
 
-This is why they Package Managers are needed, they act as intelligent coordinators:
+- `document` → entry point to the DOM.
+- `document.getElementById('id')` → grab an element by ID.
+- `document.querySelector('.class')` → grab first element matching selector.
+- `document.querySelectorAll('.class')` → grab all matching elements.
+- `element.innerHTML` → get or set content inside an element.
+- `element.style` → change CSS directly.
+- `element.addEventListener('click', fn)` → run code on events.
+- `element.appendChild(newEl)` → add elements dynamically.
 
-1. Check dependencies: When you install a package, the manager checks what other packages it needs
+## Quick Notes
 
-2. Automatically install related packages: It downloads and installs all required dependencies
-
-3. Version management: It tracks which versions are compatible and installs the right ones
-
-4. Prevent conflicts: It maintains a database to avoid version mismatches
-
-5. Update and remove: It safely updates packages or removes them without breaking your project
-
-coomon pacakag managers include; npm, yarn, pnpm among others.
-
-### What is NPM
-NPM (Node Package Manager) is the default package manager for JavaScript and Node.js. It consists of three main components:​
-
-1. The NPM CLI (Command-Line Interface): A command-line tool you use to interact with NPM on your computer
-
-2. The NPM Registry: A massive online database containing millions of packages
-
-3. The NPM Website: Where you can search for and browse available packages
-
-#### How NPM Works
-
-When you use NPM to install a package:​
-
-```
-example
-npm install express
-
-```
-
-Here's what happens behind the scenes:
-
-1. NPM checks your local machine to see if Express is already installed
-
-2. It connects to the npm registry (npmjs.com) and downloads the package
-
-3. It extracts all files into a folder called node_modules
-
-4. It records the package name and version in your package.json file
-
-5. If Express depends on other packages, NPM installs those too automatically
-
-## What is package.json ?
-
-The package.json file is a JSON file that lives in the root of your Node.js project. It is  the heart of your project, basically a comprehensive blueprint that describes everything about your project and what it needs to run.​
-
-### Why is package.json Important?​
-
-1. Identifies your project: Records the name, version, description, author, and license
-
-2. Manages dependencies: Lists all external packages your project uses
-
-3. Runs scripts: Defines custom commands for testing, building, and deploying
-
-4. Configuration: Specifies the main entry point and other settings
-
-5. Enables collaboration: Lets other developers instantly install the exact same dependencies
+- DOM changes are live—update the DOM, the page changes immediately.
+- React turns DOM manipulation into something abstract, use state & props instead of manual DOM changes for UI.
+- Hooks make functional components powerful without classes.
