@@ -1,0 +1,67 @@
+.Why{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: auto;
+    margin-block: 15em;
+    padding: 1em;
+    gap: 4em;
+    font-size: 1.3rem;
+    line-height: 1.2;
+}
+
+.Why--info{
+    display: flex;
+    flex-direction: column;
+    padding-block: 5.5em;
+    max-width: 600px;
+    margin: auto;
+}
+
+.why--info-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Why--info h2{
+    position: relative;
+    font-size: 3rem;
+    width: 500px;
+}
+
+.why-highlight{
+    top: 35%;
+    right: 35%;
+}
+
+.Why--info .text{
+    color: var(--gray);
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.why--cards{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   width: 100%;
+   gap: 1em;
+}
+
+.why--card{
+    background-color: var(--light-purple);
+    color: var(--text-color);
+    padding: 0.75em;
+    border-radius: 8px;
+}
+
+.why--card-header{
+    display: flex;
+    align-items: center;
+    gap: 0.875em;
+}
+
+.why--card-content{
+    color: var(--gray);
+    line-height: 1.5;
+}

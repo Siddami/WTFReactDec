@@ -5,6 +5,7 @@ import Categories from '../components/Categories'
 import Courses from '../components/Courses'
 import About from '../components/About'
 import Join from '../components/Join'
+import Why from '../components/Why'
 
 const LandingPage = () => {
   return (
@@ -16,6 +17,7 @@ const LandingPage = () => {
         <Courses />
         <About />
         <Join />
+        <Why />
     </>
   )
 }
