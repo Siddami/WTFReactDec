@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0;
+    text-decoration: none;
 }
 
 .btn:hover{
@@ -42,11 +43,18 @@
 }
 
 .btn-sm{
-    font-size: 0.3rem;
+    font-size: 1rem;
     justify-content: center;
-    gap: 0.5em;
-    padding: 0.5em 2.5em;
+    gap: 0.25em;
+    padding: 0.25em 0.75em;
+    max-width: fit-content;
 }
+
+.btn-sm .icon{
+    width: 1.5em;
+    height: 1.5em;
+}
+
 
 .btn-lg{
     font-size: 1.2rem;

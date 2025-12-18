@@ -1,23 +1,39 @@
 import "./Button.css";
 import clsx from "clsx";
 
-const Button = ({ children, variant, size, rounded = false, ...rest }) => {
+const Button = ({
+  children,
+  variant,
+  size,
+  rounded = false,
+  as = "button",
+  prefix,
+  suffix,
+  ...rest
+}) => {
+  const Component = as;
+
+  if (as === "a" && !rest.href) {
+    console.warn("Button rendered as <a> requires an href");
+  }
+
   return (
-    <button
+    <Component
       className={clsx(
         "btn",
         `btn-${variant}`,
         `btn-${size}`,
-        `btn-${rest.radius}`
+        rest.radius && `btn-${rest.radius}`
       )}
+      {...rest}
     >
-      {rest.prefix && (
-        <span className={clsx("icon", rounded && "rounded")}>
-          {rest.prefix}
-        </span>
+      {prefix && (
+        <span className={clsx("icon", rounded && "rounded")}>{prefix}</span>
       )}
+
       <span className="btn-children">{children}</span>
-      {rest.suffix && (
+
+      {suffix && (
         <span
           className={clsx(
             "icon",
@@ -25,10 +41,10 @@ const Button = ({ children, variant, size, rounded = false, ...rest }) => {
             rounded && `rounded-${variant}`
           )}
         >
-          {rest.suffix}
+          {suffix}
         </span>
       )}
-    </button>
+    </Component>
   );
 };
 

@@ -44,6 +44,8 @@ const NavHeader = () => {
           </ul>
 
           <Button
+            as="a"
+            href="#"
             suffix={<Arrow />}
             variant="primary"
             rounded={true}

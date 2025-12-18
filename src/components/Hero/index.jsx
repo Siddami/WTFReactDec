@@ -24,6 +24,8 @@ const Hero = () => {
           </p>
           <div className='button-container'>
             <Button
+              as='a'
+              href='#'
               variant="blue"
               size="lg"
               suffix={<Arrow />}
