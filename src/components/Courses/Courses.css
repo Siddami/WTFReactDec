@@ -15,6 +15,7 @@
     padding: 10px;
     width: fit-content;
     border-radius: 6px;
+    text-transform: uppercase;
 }
 
 .Courses--intro{
@@ -26,9 +27,14 @@
 }
 
 .Courses--intro h2{
-    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-size: clamp(2rem, 4vw, 2.5rem);
     max-width: 500px;
-    line-height: 1.2em;
+    line-height: 1.5em;
+    position: relative;
+}
+.highlight{
+      top: -5%;
+  right: 28%;
 }
 
 .Courses--cards {

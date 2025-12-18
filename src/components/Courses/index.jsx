@@ -9,7 +9,7 @@ import Note from "../../assets/icons/note.svg?react";
 import Clock from "../../assets/icons/clock.svg?react";
 import User from "../../assets/icons/user.svg?react";
 import LongArrow from "../../assets/icons/long-arrow.svg?react";
-
+import TextDecor from "../../assets/icons/text-decor.svg?react"
 
 const Courses = () => {
   return (
@@ -17,7 +17,10 @@ const Courses = () => {
       <section className="Courses">
         <p className="Courses--heading">Top Popular Course</p>
         <div className="Courses--intro">
-          <h2>Edunity Course Student Can Join With Us.</h2>
+          <h2>
+            <TextDecor className="highlight"/>
+            Edunity Course Student Can Join With Us.
+          </h2>
           <Button
             variant="primary"
             rounded={true}
@@ -64,7 +67,14 @@ const Courses = () => {
                   <img src={course.profile} alt={course.name} />
                   <p>{course.name}</p>
                 </div>
-                <Button size="sm" variant="primary" suffix={<LongArrow />}  radius="rounded-md">Enroll</Button>
+                <Button
+                  size="sm"
+                  variant="primary"
+                  suffix={<LongArrow />}
+                  radius="rounded-md"
+                >
+                  Enroll
+                </Button>
               </CardFooter>
             </Card>
           ))}

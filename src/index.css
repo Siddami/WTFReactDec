@@ -21,3 +21,8 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.highlight {
+  position: absolute;
+  width: 4em;
+}
