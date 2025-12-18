@@ -1,0 +1,74 @@
+.PopularPosts {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1.5rem;
+}
+
+/* Header */
+.PopularPosts__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  gap: 1rem;
+}
+
+.PopularPosts__header h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  margin-top: 2rem;
+}
+
+/* Grid */
+.PopularPosts__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* Card */
+.post-card {
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 1em;
+   background-color: #e2e6e692;
+}
+
+/* Image */
+.post-card__header img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+ 
+}
+
+/* Content */
+.post-card__content {
+  padding: 1rem 0;
+}
+
+.post-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: var(--gray);
+  margin-bottom: 0.75rem;
+}
+
+.post-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.post-title {
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+/* Footer */
+.post-card__footer {
+  margin-top: 1rem;
+  width: fit-content;
+}
+

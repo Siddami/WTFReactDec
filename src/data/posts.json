@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "image": "/images/post1.svg",
+    "date": "14 June 2023",
+    "comments": 6,
+    "title": "velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat"
+  },
+  {
+    "id": 2,
+    "image": "/images/post2.svg",
+    "date": "21 April 2024",
+    "comments": 6,
+    "title": "velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat"
+  },
+  {
+    "id": 3,
+    "image": "/images/post3.svg",
+    "date": "14 June 2023",
+    "comments": 6,
+    "title": "velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat"
+  }
+]

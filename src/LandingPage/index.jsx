@@ -8,6 +8,7 @@ import Join from '../components/Join'
 import Why from '../components/Why'
 import Footer from '../components/Footer'
 import Newsletter from '../components/Newletter'
+import PopularPosts from '../components/PopularPosts'
 
 const LandingPage = () => {
   return (
@@ -20,6 +21,7 @@ const LandingPage = () => {
         <About />
         <Join />
         <Why />
+        <PopularPosts />
         <Newsletter />
         <Footer />
     </>
