@@ -1,11 +1,11 @@
 .Courses{
-    padding: 20px;
+    padding: clamp(1rem, 4vw, 2rem);
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: 1220px;
     margin: auto;
-    margin-block: 8em;
+    margin-block: clamp(4rem, 10vw, 8rem);
 }
 
 .Courses--heading{
@@ -21,28 +21,33 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1.5em;
+    flex-wrap: wrap;
 }
 
 .Courses--intro h2{
-    font-size: 3em;
+    font-size: clamp(1.8rem, 4vw, 3rem);
     max-width: 500px;
     line-height: 1.2em;
-    margin: 20px 0;
 }
 
-.Courses--cards{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1em;  
-    margin-top: 20px;
+.Courses--cards {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  );
+  gap: clamp(1rem, 3vw, 2rem);
+  margin-top: 2rem;
 }
 
-.Courses--card{
-    border: 1px dashed var(--primary-color);
-    border-radius: 5px;
-    padding: 1.5em;
-    position: relative;
-    overflow: hidden;
+
+.Courses--card {
+  border: 1px dashed var(--primary-color);
+  border-radius: 8px;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  position: relative;
+  overflow: hidden;
 }
 
 .Courses--card-meta{
@@ -71,24 +76,25 @@
     margin-bottom: 10px;
 }
 
-.Courses--card-bg{
-    position: absolute;
-    bottom: -10%;
-    right: 15%;
+.Courses--card-bg {
+  position: absolute;
+  bottom: -6%;
+  right: 15%;
+  max-width: 250px;
 }
 
-.Courses--card-content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    z-index: 1;
-    width: 90%;
-    border: 1px solid #fee;
-    margin: auto;
-    margin-block: 1.5em;
-    border-radius: 6px;
-    padding-inline: 1em;
+.Courses--card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  background-color: #fff;
+  width: 100%;
+  border: 1px solid #fee;
+  margin-block: 1.5em;
+  border-radius: 6px;
+  padding: 0.75em 1em;
 }
 
 .lesson, .user, .student{
@@ -97,15 +103,35 @@
     gap: 5px;
 }
 
-.Courses--card-footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-block: 1em;
+.Courses--card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .user-details{
     display: flex;
     align-items: center;
     gap: 0.75em;
+}
+
+@media (max-width: 768px) {
+  .Courses--intro {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .Courses--card-bg {
+    display: none;
+  }
+
+   .Courses--card-content, .Courses--card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

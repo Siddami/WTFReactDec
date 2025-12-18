@@ -47,15 +47,15 @@ const Courses = () => {
               </CardHeader>
               <CardContent className="Courses--card-info">
                 <div className="Courses--card-content">
-                  <p className="lesson">
+                  <div className="lesson">
                     <Note />
                     <p>Lesson 10</p>
                     <Clock />
-                  </p>
-                  <p className="user">
+                  </div>
+                  <div className="user">
                     <p>19h 30m</p>
                     <User />
-                  </p>
+                  </div>
                   <p className="student">Students20+</p>
                 </div>
               </CardContent>
