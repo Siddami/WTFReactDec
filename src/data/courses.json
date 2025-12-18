@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title":"It Statistics Data Science And Business Analysis",
+        "image": "/courses/samantha.svg",
+        "name": "Samantha",
+        "profile": "/courses/sam-profile.svg"
+    },
+    {
+        "id": 2,
+        "title": "Bilginer Adobe Illustrator For Graphic Design",
+        "image": "/courses/charles.svg",
+        "name": "Charles",
+        "profile": "/courses/charles-profile.svg"
+    },
+    {
+        "id": 3,
+        "title": "Starting SEO as your Home Based Business",
+        "image": "/courses/morgan.svg",
+        "name": "Morgan",
+        "profile": "/courses/morgan-profile.svg"
+    },
+    {
+        "id": 4,
+        "title": "Bilginer Adobe Illustrator For Graphic Design",
+        "image": "/courses/charles.svg",
+        "name": "Brian Brewer",
+        "profile": "/courses/brian-profile.svg"
+    },
+    {
+        "id": 5,
+        "title": "It Statistics Data Science And Business Analysis",
+        "image": "/courses/rod.svg",
+        "name": "Rodriguez",
+        "profile": "/courses/rod-profile.svg"
+    },
+    {
+        "id": 6,
+        "title": "Starting SEO as your Home Based Business",
+        "image": "/courses/seo.svg",
+        "name": "Morgan",
+        "profile": "/courses/female-morgan-profile.svg"
+    }
+]
