@@ -36,6 +36,11 @@
     color: white;
 }
 
+.btn-black{
+    background-color: #000;
+    color: white;
+}
+
 .btn-xs{
     width: 45px;
     height: 45px;

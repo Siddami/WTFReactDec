@@ -7,6 +7,7 @@ import About from '../components/About'
 import Join from '../components/Join'
 import Why from '../components/Why'
 import Footer from '../components/Footer'
+import Newsletter from '../components/Newletter'
 
 const LandingPage = () => {
   return (
@@ -19,6 +20,7 @@ const LandingPage = () => {
         <About />
         <Join />
         <Why />
+        <Newsletter />
         <Footer />
     </>
   )
