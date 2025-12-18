@@ -10,9 +10,9 @@ const About = () => {
       <section className="about">
         <img src="/images/about.svg" alt="about" />
         <div className="about--info">
-          <p className="about--heading">Our About Us</p>
+          <p className="heading">Our About Us</p>
           <h2>
-            <TextDecor className="highlight" />
+            <TextDecor className="about-highlight highlight" />
             Learn & Grow your skills From anywhere{" "}
           </h2>
           <p>

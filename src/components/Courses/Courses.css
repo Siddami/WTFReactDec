@@ -8,16 +8,6 @@
     margin-block: clamp(4rem, 10vw, 8rem);
 }
 
-.Courses--heading{
-    font-size: 1em;
-    color: var(--primary-color);
-    background-color: var(--light-purple);
-    padding: 10px;
-    width: fit-content;
-    border-radius: 6px;
-    text-transform: uppercase;
-}
-
 .Courses--intro{
     display: flex;
     justify-content: space-between;

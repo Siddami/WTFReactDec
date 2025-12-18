@@ -15,7 +15,7 @@ const Courses = () => {
   return (
     <>
       <section className="Courses">
-        <p className="Courses--heading">Top Popular Course</p>
+        <p className="heading">Top Popular Course</p>
         <div className="Courses--intro">
           <h2>
             <TextDecor className="highlight"/>

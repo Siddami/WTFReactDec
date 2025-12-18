@@ -6,7 +6,7 @@ const Categories = () => {
     <>
       <section className="categories-section">
         <div className="categories-header">
-          <p className="categories-title">Categories</p>
+          <p className="heading">Categories</p>
           <h2>Browse By Categories</h2>
         </div>
         <div className="categories-container">
