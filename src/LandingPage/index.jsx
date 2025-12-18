@@ -6,6 +6,7 @@ import Courses from '../components/Courses'
 import About from '../components/About'
 import Join from '../components/Join'
 import Why from '../components/Why'
+import Footer from '../components/Footer'
 
 const LandingPage = () => {
   return (
@@ -18,6 +19,7 @@ const LandingPage = () => {
         <About />
         <Join />
         <Why />
+        <Footer />
     </>
   )
 }
