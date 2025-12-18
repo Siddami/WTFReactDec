@@ -1,0 +1,111 @@
+.Courses{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1220px;
+    margin: auto;
+    margin-block: 8em;
+}
+
+.Courses--heading{
+    font-size: 1em;
+    color: var(--primary-color);
+    background-color: var(--light-purple);
+    padding: 10px;
+    width: fit-content;
+    border-radius: 6px;
+}
+
+.Courses--intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Courses--intro h2{
+    font-size: 3em;
+    max-width: 500px;
+    line-height: 1.2em;
+    margin: 20px 0;
+}
+
+.Courses--cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;  
+    margin-top: 20px;
+}
+
+.Courses--card{
+    border: 1px dashed var(--primary-color);
+    border-radius: 5px;
+    padding: 1.5em;
+    position: relative;
+    overflow: hidden;
+}
+
+.Courses--card-meta{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.price{
+    font-size: 1em;
+    margin-top: 5px;
+    color: var(--primary-color)
+}
+
+.Courses--card-title{
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+}
+
+.Courses--card-bg{
+    position: absolute;
+    bottom: -10%;
+    right: 15%;
+}
+
+.Courses--card-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    z-index: 1;
+    width: 90%;
+    border: 1px solid #fee;
+    margin: auto;
+    margin-block: 1.5em;
+    border-radius: 6px;
+    padding-inline: 1em;
+}
+
+.lesson, .user, .student{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.Courses--card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 1em;
+}
+
+.user-details{
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+}
