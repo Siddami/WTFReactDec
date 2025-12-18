@@ -1,21 +1,20 @@
-.Why{
-    display: flex;
-    justify-content: space-between;
-    max-width: 1300px;
-    margin: auto;
-    margin-block: 15em;
-    padding: 1em;
-    gap: 4em;
-    font-size: 1.3rem;
-    line-height: 1.2;
+.Why {
+  display: flex;
+  align-items: center;
+  gap: clamp(2rem, 6vw, 4rem);
+  max-width: 1300px;
+  margin-inline: auto;
+  margin-block: clamp(6rem, 15vw, 15rem);
+  padding: clamp(1rem, 4vw, 2rem);
+  flex-wrap: wrap;
 }
 
-.Why--info{
-    display: flex;
-    flex-direction: column;
-    padding-block: 5.5em;
-    max-width: 600px;
-    margin: auto;
+.Why--info {
+  display: flex;
+  flex-direction: column;
+  padding-block: clamp(2rem, 6vw, 5.5rem);
+  max-width: 600px;
+  width: 100%;
 }
 
 .why--info-heading{
@@ -24,15 +23,17 @@
     align-items: center;
 }
 
-.Why--info h2{
-    position: relative;
-    font-size: 3rem;
-    width: 500px;
+.Why--info h2 {
+  position: relative;
+  max-width: 32ch;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.2;
 }
 
-.why-highlight{
-    top: 35%;
-    right: 35%;
+.why-highlight {
+  position: absolute;
+  top: 40%;
+  right: 30%;
 }
 
 .Why--info .text{
@@ -41,11 +42,14 @@
     margin-bottom: 1.5em;
 }
 
-.why--cards{
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   width: 100%;
-   gap: 1em;
+.why--cards {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(240px, 1fr)
+  );
+  gap: 1rem;
+  width: 100%;
 }
 
 .why--card{
@@ -64,4 +68,32 @@
 .why--card-content{
     color: var(--gray);
     line-height: 1.5;
+}
+
+.Why--image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  .Why {
+    flex-direction: column;
+  }
+
+    .Why--image {
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-highlight {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .Why {
+    font-size: 1.1rem;
+  }
 }
